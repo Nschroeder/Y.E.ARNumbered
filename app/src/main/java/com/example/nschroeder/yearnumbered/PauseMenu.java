@@ -1,5 +1,6 @@
 package com.example.nschroeder.yearnumbered;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,37 +18,16 @@ public class PauseMenu extends AppCompatActivity{
         setContentView(R.layout.pause);
     }
 
-    Button quit = (Button) findViewById(R.id.home);
-    public View.OnClickListener getQuit_listener() {
-        return quit_listener;
+    public void resumeGame (android.view.View view){
+        onBackPressed();
     }
 
-    Button shop = (Button) findViewById(R.id.shop);
-    public View.OnClickListener getShop_listener() {
-        return shop_listener;
+    public void shopScreen (android.view.View view){
+        Intent intent1 = new Intent(this, ShopScreen.class);
+        startActivity(intent1);
     }
-
-    Button resume = (Button) findViewById(R.id.);
-    public View.OnClickListener getResume_listener() {
-        return resume_listener;
+    public void mainMenu (android.view.View view){
+        Intent intent2 = new Intent(this, MainActivity.class);
+        startActivity(intent2);
     }
-
-    protected View.OnClickListener shop_listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-        }
-    };
-    protected View.OnClickListener quit_listener = new View.OnClickListener(){
-        @Override
-        public void onClick(View v) {
-
-        }
-    };
-    protected View.OnClickListener resume_listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-        }
-    };
 }

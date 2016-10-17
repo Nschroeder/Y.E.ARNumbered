@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text= "Shop"
         android:id="@+id/shop"
-        android:onClick=""
+        android:onClick="shopScreen"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -23,21 +23,23 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quit"
-        android:layout_alignTop="@+id/shop"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button2" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Resume"
-        android:id="@+id/button"
+        android:id="@+id/resume"
         android:layout_alignBaseline="@+id/button2"
         android:layout_alignBottom="@+id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick=""/>
+        android:onClick="resumeGame"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/shop"
+        android:layout_alignBottom="@+id/shop"
+        android:layout_centerHorizontal="true"
+        android:onClick="mainMenu"/>
 
 
 </RelativeLayout>
