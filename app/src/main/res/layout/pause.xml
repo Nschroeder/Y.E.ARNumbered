@@ -8,12 +8,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#75000000"
     tools:context="com.example.nschroeder.yearnumbered.PauseMenu">
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text= "Shop"
+        android:text= "@string/shop_name"
         android:id="@+id/shop"
         android:onClick="shopScreen"
         android:layout_centerVertical="true"
@@ -23,7 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resume"
+        android:text="@string/resume_name"
         android:id="@+id/resume"
         android:layout_alignBaseline="@+id/button2"
         android:layout_alignBottom="@+id/button2"
@@ -34,12 +36,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quit"
+        android:text="@string/quit_name"
         android:id="@+id/button2"
+        android:onClick="mainMenu"
         android:layout_alignBaseline="@+id/shop"
         android:layout_alignBottom="@+id/shop"
-        android:layout_centerHorizontal="true"
-        android:onClick="mainMenu"/>
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

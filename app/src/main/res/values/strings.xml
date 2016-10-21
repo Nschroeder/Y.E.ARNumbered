@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Y.E.AR: Numbered</string>
+    <string name="shop_name">Shop</string>
+    <string name="resume_name">Resume</string>
+    <string name="quit_name">Quit</string>
+    <string name="back_name">Back</string>
 </resources>

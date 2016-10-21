@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity{
 
     public void startGame(android.view.View view){
         Intent intent = new Intent(this, GameScreen.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
 }

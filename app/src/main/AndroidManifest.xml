@@ -14,7 +14,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PauseMenu">
+        <activity android:name=".PauseMenu"
+            android:theme="@android:style/Theme.Translucent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.ALTERNATIVE"/>
@@ -26,7 +27,7 @@
                 <category android:name="android.intent.category.ALTERNATIVE"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenu">
+        <activity android:name=".GameScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.ALTERNATIVE"/>
