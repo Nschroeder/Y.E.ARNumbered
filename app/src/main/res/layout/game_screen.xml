@@ -11,16 +11,6 @@
     android:background="#000000"
     tools:context="com.example.nschroeder.yearnumbered.GameScreen">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text= "@string/shop_name"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/shop"
-        android:onClick="shopScreen"/>
-
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -34,6 +24,34 @@
         android:id= "@+id/game"
         android:src="@drawable/game2"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shoot"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow"
+        android:id="@+id/moveRight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow"
+        android:id="@+id/moveLeft"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+    />
 
 </RelativeLayout>
